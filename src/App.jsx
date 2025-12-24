@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import bgimage from "./assets/Image/bg.png";
+import { FaCheckCircle, FaMoneyCheckAlt, FaSolarPanel } from "react-icons/fa";
 
 function App() {
   const [state, setState] = useState("");
@@ -29,9 +30,9 @@ function App() {
       style={{ backgroundImage: `url(${bgimage})` }}
     >
       <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
-            <div className="col-span-1">
+        <div className="col-span-1">
 
-            </div>
+        </div>
         {/* FORM CARD */}
         <div className="bg-gradient-to-r from-[#fbfdff] via-[#f1f7ff] to-[#e9f2ff] rounded-xl shadow-lg p-6 md:p-8">
           <h2 className="text-lg font-semibold text-center mb-5 text-[#192e5b]">
@@ -39,7 +40,7 @@ function App() {
           </h2>
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            
+
             {/* REQUIRED */}
             <input type="hidden" name="access_key" value="8fe568e7-7eeb-45c0-bb54-7847c67912cb" />
             <input type="hidden" name="subject" value="New Solar Lead - Holsol" />
@@ -132,11 +133,23 @@ function App() {
             </button>
           </form>
 
-          <div className="flex justify-between text-sm font-semibold text-[#192e5b] mt-5">
-            <span>PM Surya Ghar Subsidy</span>
-            <span>Easy EMI</span>
-            <span>Govt Empanelled</span>
+          <div className="flex flex-wrap gap-3 justify-between text-sm font-semibold text-[#192e5b] mt-5">
+            <span className="flex items-center gap-1">
+              <FaSolarPanel/>
+              PM Surya Ghar Subsidy
+            </span>
+
+            <span className="flex items-center gap-1">
+              <FaMoneyCheckAlt />
+              Easy EMI
+            </span>
+
+            <span className="flex items-center gap-1">
+              <FaCheckCircle />
+              Govt Empanelled
+            </span>
           </div>
+
         </div>
       </div>
     </div>
