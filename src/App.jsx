@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
-import bgimage from "./assets/Image/bg.png";
+// import bgimage from "./assets/Image/bgh.png";
+// import mgmobile from "./assets/Image/mobile.png"
 import { FaCheckCircle, FaMoneyCheckAlt, FaSolarPanel } from "react-icons/fa";
 
 function App() {
@@ -25,21 +26,30 @@ function App() {
   };
 
   return (
+    // <div
+    //   className="min-h-screen flex items-center justify-center bg-cover bg-center px-4 py-10 md:py-0"
+    //   style={{ backgroundImage: `url(${mgmobile})` }}
+    // >
     <div
-      className="min-h-screen flex items-center justify-center bg-cover bg-center px-4"
-      style={{ backgroundImage: `url(${bgimage})` }}
-    >
-      <div className="max-w-6xl w-full grid md:grid-cols-2 gap-10 items-center">
+  className="
+    min-h-screen flex items-center justify-center
+    px-4 py-10 md:py-0
+    bg-cover bg-center
+    bg-[url('./assets/Image/mobile.png')]
+    md:bg-[url('./assets/Image/bgh.png')]
+  "
+>
+      <div className="max-w-6xl w-full grid md:grid-cols-2 md:gap-10 items-center">
         <div className="col-span-1">
 
         </div>
         {/* FORM CARD */}
-        <div className="bg-gradient-to-r from-[#fbfdff] via-[#f1f7ff] to-[#e9f2ff] rounded-xl shadow-lg p-6 md:p-8">
+        <div className="bg-gradient-to-r from-[#fbfdff] via-[#f1f7ff] to-[#e9f2ff] rounded-xl shadow-lg p-6 md:p-8 md:mt-0 mt-[100%]">
           <h2 className="text-lg font-semibold text-center mb-5 text-[#192e5b]">
             Book your FREE Solar Site Survey
           </h2>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4 ">
 
             {/* REQUIRED */}
             <input type="hidden" name="access_key" value="8fe568e7-7eeb-45c0-bb54-7847c67912cb" />
@@ -135,7 +145,7 @@ function App() {
 
           <div className="flex flex-wrap gap-3 justify-between text-sm font-semibold text-[#192e5b] mt-5">
             <span className="flex items-center gap-1">
-              <FaSolarPanel/>
+              <FaSolarPanel />
               PM Surya Ghar Subsidy
             </span>
 
@@ -157,3 +167,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+

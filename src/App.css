@@ -1,4 +1,4 @@
-.input {
+/* .input {
   width: 100%;
   border: 1px solid #d1d5db;
   padding: 10px 14px;
@@ -9,4 +9,57 @@
 
 .input:focus {
   border-color: #2563eb;
+} */
+
+.input {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 9999px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
 }
+
+.input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.subsidy {
+  text-align: center;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.subsidy.green {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.subsidy.blue {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.trust-card {
+  background: #eff6ff;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-weight: 600;
+}
+
+
