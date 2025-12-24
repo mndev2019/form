@@ -35,7 +35,7 @@ function App() {
     min-h-screen flex items-center justify-center
     px-4 py-10 md:py-0
     bg-cover bg-center
-    bg-[url('./assets/Image/mobile.png')]
+    bg-[url('./assets/Image/mobilenew.png')]
     md:bg-[url('./assets/Image/bgh.png')]
   "
     >
