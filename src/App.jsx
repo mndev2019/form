@@ -35,7 +35,7 @@ function App() {
     min-h-screen flex items-center justify-center
     px-4 py-10 md:py-0
     bg-cover bg-center
-    bg-[url('./assets/Image/mobile.png')]
+    bg-[url('./assets/Image/mobilenew.png')]
     md:bg-[url('./assets/Image/bgh.png')]
   "
 >
@@ -44,7 +44,7 @@ function App() {
 
         </div>
         {/* FORM CARD */}
-        <div className="bg-gradient-to-r from-[#fbfdff] via-[#f1f7ff] to-[#e9f2ff] rounded-xl shadow-lg p-6 md:p-8 md:mt-0 mt-[100%]">
+        <div className="bg-gradient-to-r from-[#fbfdff] via-[#f1f7ff] to-[#e9f2ff] rounded-xl shadow-lg p-6 md:p-8 md:mt-0 mt-[80%]">
           <h2 className="text-lg font-semibold text-center mb-5 text-[#192e5b]">
             Book your FREE Solar Site Survey
           </h2>
@@ -137,7 +137,7 @@ function App() {
 
             <button
               type="submit"
-              className="cursor-pointer w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold py-3 rounded-full"
+              className="cursor-pointer w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-semibold md:py-3 rounded-full py-2"
             >
               Get My Festive Solar Offer
             </button>

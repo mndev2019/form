@@ -19,6 +19,11 @@
   font-size: 14px;
   outline: none;
 }
+@media (max-width: 767px) {
+  .input {
+    padding: 10px 16px;
+  }
+}
 
 .input:focus {
   border-color: #3b82f6;
