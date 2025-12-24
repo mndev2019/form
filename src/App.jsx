@@ -31,14 +31,14 @@ function App() {
     //   style={{ backgroundImage: `url(${mgmobile})` }}
     // >
     <div
-  className="
+      className="
     min-h-screen flex items-center justify-center
     px-4 py-10 md:py-0
     bg-cover bg-center
-    bg-[url('./assets/Image/mobilenew.png')]
+    bg-[url('./assets/Image/mobile.png')]
     md:bg-[url('./assets/Image/bgh.png')]
   "
->
+    >
       <div className="max-w-6xl w-full grid md:grid-cols-2 md:gap-10 items-center">
         <div className="col-span-1">
 
